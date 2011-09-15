@@ -1,0 +1,729 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Alphabetical List of ColdFusion Functions</TITLE>
+<script type="text/javascript" language="JavaScript" src="cfml.js"></script>
+</HEAD>
+<BODY bgColor=white text=black vLink=black>
+<CENTER>
+	<font size="+1">Example of the CFMLjsLibrary </font>
+	<script name="javascript">
+
+testArray = new Array(3);
+
+testArray[0] = 22
+
+testArray[1] = 4
+
+testArray[2] = 5
+
+</script>
+	<TABLE bgColor=silver border=0 cellPadding=2 cellSpacing=0 width=600>
+		<TBODY>
+		
+		<TR>
+		
+		<TD>
+		<FONT color=white face="arial, geneva, helvetica, sans serif" 
+
+      size=0>
+		<A name=top></A>&nbsp;
+		<TABLE bgColor=white border=0 cellPadding=0 cellSpacing=0 width=600>
+			<TBODY>
+				<TR>
+					<!--- 7 cols. Col 7 = color only --->
+					<TD bgColor=silver noWrap width=50></TD>
+					<TD bgColor=gray noWrap width=25></TD>
+					<TD bgColor=gray noWrap width=25></TD>
+					<TD bgColor=gray noWrap width=425></TD>
+					<TD bgColor=graynoWrap width=50></TD>
+					<TD bgColor=gray noWrap width=13></TD>
+					<TD bgColor=silver noWrap rowSpan=99 width=2>&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD>&nbsp;</TD>
+					<TD align=right colSpan=5 height=25 vAlign=top><!--- Navbar for most pages --->
+					</TD>
+				</TR>
+				<TR>
+					<TD bgColor=#ffffff colSpan=5 height=75>&nbsp;</TD>
+					<TD bgColor=#339933 rowSpan=99>&nbsp;</TD>
+					<!--- Col 6 = color only  (Col 7 is color only too) --->
+				</TR>
+				<!-- End of header content. Page content displays below. -->
+				<TR>
+					<TD bgColor=#ffffff>&nbsp;</TD>
+					<TD bgColor=#ffffff>&nbsp;</TD>
+					<TD bgColor=#ffffff colSpan=2><BR>
+						<A name=1218219>
+						<!--- A Heading. Indented one column. --->
+						&nbsp;</TD>
+					<TD bgColor=#ffffff>&nbsp;</TD>
+				</TR>
+				<!-- End previous row --->
+				<TR>
+				
+				<TD bgColor=#ffffff>&nbsp;</TD>
+				<TD bgColor=#ffffff colSpan=3>
+				<FONT face="Arial Black, Helvetica" 
+
+            size=+2>
+CFMLjsLibrary Functions
+				<P></P>
+				<P>
+				<DIV>
+				
+				<form method="post" >
+					<TABLE border=1 cellPadding=3 cellSpacing=0>
+						<CAPTION>
+						</CAPTION>
+						<TBODY>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button" style="text-align: center; width: 180 px;" type="Button" value=" Abs()"  onClick="alert('The absolute value of the following numbers\n 1,3,-4,-3.2,6 is \n'+abs(1)+','+abs(3)+','+abs(-4)+','+abs(-3.2)+','+abs(6))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1><font color="silver">DE</font> </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Listchangedelims()" onClick="alert(listchangedelims('2,3,4,5','+'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Removechars()" onClick="x = 'My Test String';alert(x);alert(removechars(x,2,4));">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Acos()" onClick="x=prompt('Type in a number to get its arccosine in Radians ');alert(acos(x))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>DecimalFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listcontains()" onClick="x = 'Hello,Peace,love';alert(listcontains(x,'ea'));">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Repeatstring()" onClick="alert(repeatstring('x',3))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arrayappend()" onClick="x=prompt('Type in a letter to be appended to the array ? ');arrayappend(testArray,x);alert(testArray)">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Decrementvalue()" onClick="alert(decrementvalue(100))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Listcontainsnocase()" onClick="x = 'Hello,Peace,love';alert(listcontainsnocase(x,'EA'));">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Replace()" onClick="x = 'Hello,Peace,love';alert(replace(x,'e','b'));">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arrayavg()" onClick="alert(arrayavg(testArray))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>Decrypt</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Listdeleteat()" onClick="alert(listdeleteat('2,3,4,5',2))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" ReplaceList()" onClick="x = 'My Test String';alert(x);alert(replacelist(x,'Test,String','Replace,Sentence'));">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arrayclear()" onClick="arrayclear(testArray);alert(testArray)">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>DeleteClientVariable</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listfind()" onClick="alert(listfind('2,3,4,5','4'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" ReplaceNoCase()" onClick="x = 'HELLO,Peace,love';alert(replacenocase(x,'e','b'));">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arraydeleteat()" onClick="arraydeleteat(testArray,2);alert(testArray)">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1 color="silver">DirectoryExists</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listfindnocase()" onClick="alert(listfind('A,B,C,D','a'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" REReplace()" onClick="alert(rereplace('CABARET','C|B','G','ALL'))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arrayinsertat()" onClick="arrayinsertat(testArray,2,7);alert(testArray)">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>DollarFormat</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listfirst()" onClick="alert(listfirst('2,3;4,5',';'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" REReplaceNocase()" onClick="alert(rereplacenocase('cabaret','C|B','G','ALL'))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arrayisempty()" onClick="alert(arrayisempty(testArray))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Encrypt()" onClick="alert(encrypt('Shlomy',6))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listgetat()" onClick="alert(listgetat('2,3,4,5',3))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" reverse()" onClick="alert(reverse('abcdefg'))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arraylen()" onClick="alert(arraylen(testArray))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" evaluate()" onClick="alert(eval('document.location'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listinsertat()" onClick="alert(listinsertat('2,3,4,5',2,'2'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" right()" onClick="alert(right('abcdefg',3))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arraymax()" onClick="alert(arraymax(testArray))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" exp()" onClick="alert(exp(2))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listlast()" onClick="alert(listlast('2,3,4,5'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" rjustify()" onClick="alert(rjustify('abcd',7))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arraymin()" onClick="alert(arraymin(testArray))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>ExpandPath</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Listlen()" onClick="alert(listlen('2,3,4,5'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Round()" onClick="alert(round(7.49))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>ArrayNew </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>FileExists </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listprepend()" onClick="alert(listprepend('2,3,4,5','2'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" rtrim()" onClick="alert(rtrim(' this is rtrim()     ') + '***')">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arrayprepend()" onClick="x=prompt('Type in a letter to be prepended to the array ? ');arrayprepend(testArray,x);alert(testArray)">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" find()" onClick="alert(find('BC','ABCDEFG'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listqualify()" onClick="alert(listqualify('2,3,4,5','b'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" second()" onClick="alert(second(now()))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arrayresize()" onClick="arrayresize(testArray,2);alert(testArray)">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" findnocase()" onClick="alert(findnocase('bc','ABCDEFG'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>ListRest </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>SetLocale </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arrayset()" onClick="arrayset(testArray,1,2,3);alert(testArray)">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>FindOneOf </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listsetat()" onClick="alert(listsetat('2,3,4,5',2,'2'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>SetProfileString </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1><font color="silver">Arraysort</font> </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>FirstDayOfMonth</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>ListSort</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>SetVariable</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arraysum()" onClick="alert(testArray);alert(arraysum(testArray))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" fix()" onClick="alert(fix(-22.4))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listtoarray()" onClick="x=listtoarray('2,3,4,5');alert(x[0])">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" sgn()" onClick="x=prompt('Please enter a number to get its sign');alert(sgn(x))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arrayswap()" onClick="alert(testArray);arrayswap(testArray,1,2);alert(testArray)">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>FormatBaseN </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listvaluecount()" onClick="alert(listvaluecount('2,3,4,5,3,4,6,4,3',3))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" sin()" onClick="x=prompt('Please enter an angle for which you want the Sin value');alert(sin(x))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Arraytolist()" onClick="alert(testArray);alert(arraytolist(testArray,'*'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetBaseTagData </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>ListValueCountNoCase </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>SpanExcluding </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Asc()" onClick="x=prompt('Type in one charachter to get its ASCII value ');alert(asc(x))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetBaseTagList </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" ljustify()" onClick="alert(ljustify('abcd',7))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>SpanIncluding </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Asin()" onClick="x=prompt('Type in a number to get its arcsine in Radians ');alert(asin(x))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetBaseTemplatePath </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" log()" onClick="alert(log(2))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" sqr()" onClick="x=prompt('Type in a number to get its positive square root ');alert(sqr(x))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Atan()" onClick="x=prompt('Type in a number to get its arctangent in Radians ');alert(atan(x))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetClientVariablesList </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>Log10 </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StripCR </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>AuthenticatedContext </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetCurrentTemplatePath </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSCurrencyFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructClear </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>AuthenticatedUser </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetDirectoryFromPath </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSDateFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructCopy </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Bitand()" onClick="alert(bitand(5,255));alert(bitand(5,0));alert(bitand(128,128));">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetFileFromPath </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSEuroCurrencyFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructCount </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>BitMaskClear </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetLocale </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSIsCurrency </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructDelete </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>BitMaskRead </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetProfileString </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSIsDate </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructFind </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>BitMaskSet </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetTempDirectory </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSIsNumeric </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructInsert </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Bitnot()" onClick="alert(bitnot(0));alert(bitnot(255));">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetTempFile </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSNumberFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructIsEmpty </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Bitor()" onClick="alert(bitor(5,255));alert(bitor(5,0));alert(bitor(7,8));">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetTemplatePath </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSParseCurrency </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructKeyArray </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Bitshln()" onClick="alert(bitshln(1,1));alert(bitshln(1,30));alert(bitshln(1,31));">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetTickCount </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSParseDateTime </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructKeyExists </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Bitshrn()" onClick="alert(bitshrn(1,1));alert(bitshrn(255,7));alert(bitshrn(-2147483548,1));">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetTimeZoneInfo </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSParseEuroCurrency </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructKeyList </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Bitxor()" onClick="alert(bitxor(5,255));alert(bitxor(5,0));alert(bitxor(128,128));">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>GetToken </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSParseNumber </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructNew </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Ceiling()" onClick="x=prompt('Type in a number to get its closest integer greater or equal to the number');alert(ceiling(x))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Hour()" onClick="alert(hour(now()))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>LSTimeFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>StructUpdate </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Chr()" onClick="x=prompt('Type in a number to get its ascii ');alert(chr(x))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>HTMLCodeFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Ltrim()" onClick="alert('***'+ltrim('      this is ltrim()'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Tan()" onClick="x=prompt('Please enter an angle for which you want the tangent value');alert(tan(x))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Cjustify()" onClick="alert(cjustify('abcd',7))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>HTMLEditFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" max()" onClick="alert(max(2,3))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>TimeFormat </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Compare()" onClick="alert(compare('BABE','AZZZ'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>HTMLEditFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" mid()" onClick="alert(mid('abcdefg',3,3))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" trim()" onClick="alert('***'+trim('     this is trim()     ') + '***')">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Comparenocase()" onClick="alert(comparenocase('ABC','abc'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" iif()" onClick="x=false;alert(iif('x','x is true','x is not true'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" min()" onClick="alert(min(2,3))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" ucase()" onClick="alert(ucase('Hello this is all in uppercase'))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Cos()" onClick="x=prompt('Type in a number to get its cosine in Radians ');alert(cos(x))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" incrementvalue()" onClick="alert(incrementvalue(100))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Minute()" onClick="alert(minute(now()))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" urlencodedformat()" onClick="x=prompt('Please enter a sentence with spaces and special characters');alert(urlencodedformat(x))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>CreateDate</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" InputBaseN()" onClick="alert(inputbasen(1111,2))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Month()" onClick="alert(month(now()))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Val()" onClick="alert(val('123GO'))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>CreateDateTime </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Insert()" onClick="alert(insert('abc','Hello',3))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>MonthAsString </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>ValueList </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>CreateODBCDate </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>Int </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" now()" onClick="alert(now())">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>Week </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>CreateODBCDateTime </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsArray </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>NumberFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>WriteOutput </FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>CreateODBCTime </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsAuthenticated </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>ParagraphFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" year()" onClick="x=prompt('Please enter a date');alert(year(x))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>CreateTime </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsAuthorized </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>ParameterExists </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" yesnoformat()" onClick="x=prompt('Please enter a value');alert(yesnoformat(x))">
+									</FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>CreateTimeSpan </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsBoolean </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>ParseDateTime </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>CreateUUID </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsDate </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" pi()" onClick="alert(pi())">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>DateAdd </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsDebugMode </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>PreserveSingleQuotes </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>DateCompare </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsDefined </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>Quarter </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>DateConvert </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" IsLeapYear()" onClick="alert(isleapyear(now()))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>QueryAddColumn </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>DateDiff </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsNumeric </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>QueryAddRow </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>DateFormat </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsNumericDate </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>QueryNew</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>DatePart</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsQuery</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>QuerySetCell</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" Day()" onClick="alert(day(now()))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsSimpleValue</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>QuotedValueList</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" DayofWeek()" onClick="alert(dayofweek(now()))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>IsStruct</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" rand()" onClick="alert(rand())">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" DayofWeekasString()" onClick="alert(dayofweekasstring(now()))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" lcase()" onClick="alert(lcase('Hello this is all in Lowercase'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>Randomize </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>DayOfYear </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" left()" onClick="alert(left('abcdefg',3))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>RandRange </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" daysinmonth()" onClick="alert(daysinmonth(now()))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" len()" onClick="alert(len('abcdefg'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>REFind </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+size=-1></FONT></TD>
+							</TR>
+							<TR vAlign=top>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>DaysInYear </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>
+									<input style="text-align: center; width: 180 px;" type="Button"  value=" listappend()" onClick="alert(listappend('2,3,4,5','2'))">
+									</FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica size=-1>REFindNoCase </FONT></TD>
+								<TD vAlign=top><FONT face=arial,helvetica 
+
+              size=-1></FONT></TD>
+							</TR>
+						</TBODY>
+					</TABLE>
+					</DIV>
+					
+					<P></P>
+					<P>
+					<DIV>
+						<TABLE border=1 cellPadding=3 cellSpacing=0>
+							<CAPTION>
+							</CAPTION>
+							<TBODY>
+							</TBODY>
+						</TABLE>
+					</DIV>
+					</FONT>
+					</TD>
+					
+					<TD bgColor=#ffffff>&nbsp;</TD>
+					</TR>
+					<!--- Put some space between heading and body --->
+					<TR>
+						<TD bgColor=#ffffff colSpan=5 height=8>&nbsp;</TD>
+					</TR>
+					<!--- Start the next row --->
+					<TR>
+						<TD bgColor=#ffffff colSpan=3>&nbsp;</TD>
+						<TD bgColor=#ffffff><!--- End A Heading --->
+							<BR>
+							<BR>
+							<!--- End the td for main page display  ---></TD>
+						<TD bgColor=#ffffff>&nbsp;</TD>
+					</TR>
+					<!---  begin footer --->
+					<TR>
+						<TD bgColor=#ffffff colSpan=5 height=100>&nbsp;</TD>
+					</TR>
+					<TR>
+						<TD align=right bgColor=#ffffff colSpan=4></TD>
+						<TD bgColor=#ffffff>&nbsp;</TD>
+					</TR>
+					<TR>
+						<TD bgColor=#ffffff colSpan=5 height=120>&nbsp;</TD>
+					</TR>
+					<TR>
+						<TD colSpan=5 height=29 vAlign=top><FONT face="Arial, Helvetica" 
+
+            size=-2>
+							<P> &nbsp;&nbsp;&nbsp;&nbsp;<BR>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+				</form>
+			<BR>
+			</FONT>
+			</P>
+			</TD>
+			</TR>
+			</TBODY>
+		</TABLE>
+		</FONT>
+		</TD>
+		</TR>
+		</TBODY>
+	</TABLE>
+</CENTER>
+</BODY>
+</HTML>
