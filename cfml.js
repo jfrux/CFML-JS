@@ -1,9 +1,7 @@
-﻿var cf = { 
-	/* abs(x) */
+﻿var cf = { /* abs(x) */
     abs: function (x) {
         return Math.abs(x);
     },
-	
     /* rtrim(string) */
     rtrim: function (myString) {
         var i = myString.length;
@@ -13,7 +11,6 @@
         while (myString.charCodeAt(i) == 32 || myString.charCodeAt(i) == 'NaN');
         return myString.substr(0, i + 1);
     },
-	
     /* ltrim(string) */
     ltrim: function (myString) {
        var i = 0;
@@ -246,7 +243,7 @@
     /* chr(number) */
     chr: function (number) {
         return String.fromCharCode(number);
-    }
+    },
 
     /* cjustify(string, length) */
     cjustify: function (mystring, number) {
@@ -258,7 +255,7 @@
             mystring += ' '
         }
         return mystring
-    }
+    },
 
     /*compare(string1, string2) */
     compare: function (string1, string2) {
@@ -281,7 +278,7 @@
         }
 
         return x;
-    }
+    },
 
     /* comparenocase(string1, string2) */
     comparenocase: function (string1, string2) {
@@ -306,19 +303,19 @@
         }
 
         return x;
-    }
+    },
 
     /* createdate(year, month, day) */
     createdate: function (myyear, mymonth, myday) {
         mydate = new Date(myyear, mymonth, myday)
         return mydate;
-    }
+    },
 
     /* createdatetime(year, month, day,hour,minute,second) */
     createdatetime: function (myyear, mymonth, myday, myhour, myminute, mysecond) {
         mydate = new Date(myyear, mymonth, myday, myhour, myminute, mysecond)
         return mydate;
-    }
+    },
 
     /* cos(x) */
     cos: function (x) {
@@ -410,12 +407,12 @@
             Temp += Cipher
         }
         return (Temp)
-    }
+    },
 
     /* evaluate(stringexpression) */
     evaluate: function (stringexpression) {
         return eval(stringexpression);
-    }
+    },
 
     /* find(substring, string , start ) */
     find: function (mysubstring, mystring, mystart) {
@@ -425,7 +422,7 @@
             mystart = mystart - 1;
         }
         return mystring.indexOf(mysubstring, mystart) + 1;
-    }
+    },
 
     /* findnocase(substring, string , start ) */
     findnocase: function (mysubstring, mystring, mystart) {
@@ -437,7 +434,7 @@
         mystring = mystring.toUpperCase()
         mysubstring = mysubstring.toUpperCase()
         return mystring.indexOf(mysubstring, mystart) + 1;
-    }
+    },
 
     /* fix(number) */
     fix: function (number) {
@@ -498,7 +495,7 @@
         added = _TempListFirstSplitArray.splice(_TempListFirstSplitArray.length, 0, value)
         _TempStringToReturn = _TempListFirstSplitArray.join(delimiters)
         return _TempStringToReturn
-    }
+    },
 
     /* listchangedelims(list,new_delimiters,delimiters) */
     listchangedelims: function (list, new_delimiters, delimiters) {
@@ -508,7 +505,7 @@
         _TempListSplitArray = list.split(delimiters)
         _TempStringToReturn = _TempListSplitArray.join(new_delimiters)
         return _TempStringToReturn
-    }
+    },
 
     /* listcontains(list, substring , delimiters) */
     listcontains: function (list, mysubstring, delimiters) {
@@ -524,7 +521,7 @@
         }
 
         return x;
-    }
+    },
 
     /* listcontainsnocase(list, substring , delimiters) */
     listcontainsnocase: function (list, mysubstring, delimiters) {
@@ -760,19 +757,19 @@
     },
 
     /* now() */
-    function now() {
+    now: function () {
         _NewDate = new Date();
         return _NewDate
     },
 
     /* pi() */
-    function pi() {
+    pi: function () {
         return Math.PI;
     },
 
     /* rand() */
 
-    function rand() {
+    rand: function () {
         return Math.random();
     },
 
